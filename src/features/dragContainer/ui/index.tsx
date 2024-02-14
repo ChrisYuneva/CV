@@ -5,11 +5,11 @@ import styles from './index.module.scss';
 function DragContainer() {
     return (
         <div className={styles.wrapper}>
-        {
-            dragIcons.map((item) => 
-            <DragIcon src={item.src} id={item.id} key={item.id}/>)
-        }
-    </div>
+            {
+                dragIcons.map((item) => 
+                <DragIcon src={item.src} id={item.id} key={item.id}/>)
+            }
+        </div>
     )
 }
 

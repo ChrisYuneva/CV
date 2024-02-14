@@ -1,158 +1,105 @@
 .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 604px;
+  border-bottom: 1px solid var(--color-black);
+  overflow: hidden;
+  position: relative;
+
+  .counter {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 604px;
-    border-bottom: 1px solid var(--color-black);
-    overflow: hidden;
-    position: relative;
+    align-self: flex-end;
+    position: absolute;
+    top: 10px;
+    gap: 5px;
+    padding-right: 5px;
 
-    .img {
-        position: absolute;
-        width: 380px;
-        height: 537px;
-        bottom: -30px;
+    .count {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--color-dark);
     }
+  }
 
-    .middleImg {
-        position: absolute;
-        width: 420px;
-        height: 577px;
-        bottom: -55px;
-    }
+  .imgWrap {
+    position: absolute;
+    width: 380px;
+    height: 537px;
+    bottom: -30px;
+  }
 
-    .bigImg {
-        position: absolute;
-        width: 500px;
-        height: 657px;
-        bottom: -70px;
-    }
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .middleImg {
+    position: absolute;
+    width: 420px;
+    height: 577px;
+    bottom: -55px;
+  }
+
+  .bigImg {
+    position: absolute;
+    width: 500px;
+    height: 657px;
+    bottom: -70px;
+  }
 }
 
 .shadow {
-    border: 2px solid var(--color-black);
-    box-shadow: 0px 5px 10px 2px rgba(14, 13, 13, 0.2) inset;
+  box-shadow: inset 0px 0px 5px 4px var(--color-dark);
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font: 16px / 1.4 sans-serif;
-  }
-  h1 {
-    font-size: 2em;
-    font-weight: bold;
-  }
-  h1,
-  p {
-    margin-bottom: 20px;
-  }
-  .wrap {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-  }
-  .items-wrap {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: 20px;
-  }
-  .items-wrap:before,
-  .items-wrap:after {
-    content: "";
-    height: 100%;
-    top: 0;
-    width: 10%;
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-  }
-  .items-wrap:before {
-    left: 0;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
-  .items-wrap:after {
-    right: 0;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
-  }
-  .items {
-    flex-shrink: 0;
-    display: flex;
-    gap: 20px;
-    counter-reset: item;
-    justify-content: space-around;
-    min-width: 100%;
-  }
-  .item {
-    background: #ccc;
-    flex: 0 0 auto;
-    width: 100px;
-    height: 100px;
-    counter-increment: item;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    font-weight: bold;
-    color: #fff;
-    margin: 10px 0;
-    transition: all 0.1s ease-in-out;
-  }
-  .item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .item:before {
-    content: counter(item);
-  }
-  
-  .marquee {
-    animation: scroll 20s linear infinite;
-  }
-  .reverce {
-    animation-direction: reverse;
-  }
-  .items-wrap:hover .marquee {
-    animation-play-state: paused;
-  }
-  
-  .perfscan {
-    margin: 20px 0;
-    text-align: center;
-    bottom: 0;
-    background: #fff;
-    padding: 5px;
-  }
-  .perfscan hr {
-    border: solid #999;
-    border-width: 1px 0 0 0;
-    max-width: 50%;
-    margin: 0 auto 20px;
-  }
-  .perfscan a {
-    color: #000;
-    font-weight: bold;
-  }
-  
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - 20px));
-    }
-  }
-  
+.textShadow {
+  text-shadow: var(--color-red) 1px 3px 2px;
+}
+
+.react {
+  font-size: 64px;
+  margin-right: 90px;
+}
+
+.css {
+  font-size: 28px;
+  margin-right: 90px;
+}
+
+.typescript {
+  font-size: 48px;
+  margin-right: 94px;
+}
+
+.html {
+  font-size: 36px;
+  margin-right: 102px;
+}
+
+.js {
+  font-size: 48px;
+  margin-right: 90px;
+}
+
+.git {
+  font-size: 40px;
+  margin-right: 130px;
+}
+
+.jest {
+  font-size: 36px;
+  margin-right: 140px;
+}
+
+.sass {
+  font-size: 32px;
+  margin-right: 150px;
+}
+
+.vite {
+  font-size: 28px;
+  margin-right: 90px;
+}
