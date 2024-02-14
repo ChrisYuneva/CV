@@ -1,10 +1,11 @@
 import './index.css';
+import MainPage from 'pages/main/ui';
 
 function App() {
 
   return (
     <div>
-      hello 
+      <MainPage />
     </div>
   )
 }
