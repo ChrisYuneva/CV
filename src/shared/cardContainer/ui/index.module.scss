@@ -1,0 +1,58 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .column {
+        display: flex;
+        gap: 25px;
+    }
+
+    .languages {
+        width: 275px;
+        height: 150px;
+
+        .languagesContent {
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            gap: 8px;
+        }
+    }
+
+    .frameworks {
+        width: 307px;
+        height: 149px;
+
+        .frameworksContent {
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            gap: 8px;
+        }
+    }
+
+    .tools {
+        height: 191px;
+        width: 275px;
+
+        .toolsContent {
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            gap: 8px;
+        }
+    }
+
+    .other {
+        align-self: self-end;
+        height: 149px;
+        width: 275px;
+
+        .otherContent { 
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            gap: 8px;}
+    }
+}

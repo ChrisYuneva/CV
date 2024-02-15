@@ -1,0 +1,11 @@
+@import '../../../app/styles/helpers.scss';
+
+.card {
+    border: 1px solid var(--color-black);
+    .title {
+        display: block;
+        padding: 8px;
+        @include text(24px, normal, 500, normal, var(--color-black));
+        border-bottom: 1px solid var(--color-red);
+    }
+}

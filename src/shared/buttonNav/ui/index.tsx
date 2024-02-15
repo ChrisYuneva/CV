@@ -1,14 +1,14 @@
 import styles from './index.module.scss';
 
-interface ButtonLinkProps {
+interface ButtonNavProps {
     text: string,
     onClick: () => void
 }
 
-function ButtonLink({ text, onClick }: ButtonLinkProps) {
+function ButtonNav({ text, onClick }: ButtonNavProps) {
     return (
         <button className={styles.btn} onClick={onClick}>{text}</button>
     )
 }
 
-export default ButtonLink;
+export default ButtonNav;

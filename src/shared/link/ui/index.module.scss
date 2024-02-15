@@ -1,0 +1,15 @@
+@import '../../../app/styles/helpers.scss'; 
+
+.link {
+    border: 1px solid var(--color-red);
+    padding: 8px 16px;
+    text-decoration: none;
+    width: fit-content;
+    @include text(16px, normal, 400, normal, var(--color-red));
+
+    
+    &:hover {
+        background-color: #D3C3C9;
+        transition: all .3s ease-in-out;
+    }
+}

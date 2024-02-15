@@ -1,0 +1,20 @@
+@import '../../../app/styles/helpers.scss';
+
+.title {
+    display: flex;
+    align-items: center;
+
+    .lattice {
+        @include text(32px, normal, 400, normal, var(--color-red));
+    }
+
+    .text {
+        @include text(32px, normal, 400, normal, var(--color-black));
+    }
+
+    .line {
+        border-bottom: 1px solid var(--color-red);
+        // width: 30px;
+        margin-left: 16px;
+    }
+}

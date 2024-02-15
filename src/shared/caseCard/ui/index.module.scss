@@ -1,0 +1,33 @@
+@import '../../../app/styles/helpers.scss';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-black);
+
+    .img {
+        height: 274px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .stack {
+        padding: 16px;
+        border-bottom: 1px solid var(--color-black);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        gap: 16px;
+
+        .title {
+            @include text(24px, medium, normal, normal, var(--color-black));
+        }
+
+        .description {
+            @include text(16px, medium, normal, normal, var(--color-black));
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.wrapper {
+    position: relative;
+    width: 462px;
+    height: 355px;
+
+    .dotsTop {
+        position: absolute;
+        top: 0;
+    }
+
+    .squareBig {
+        position: absolute;
+        right: 47px;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 95px;
+        right: 40%;
+    }
+
+    .figure {
+        position: absolute;
+        bottom: 0;
+        left: 3%;
+    }
+
+    .square {
+        position: absolute;
+        bottom: 3%;
+        right: 0;
+    }
+}

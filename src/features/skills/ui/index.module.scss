@@ -1,0 +1,17 @@
+.skills {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--color-black);
+
+    .line {
+        width: 310px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        
+    }
+}
