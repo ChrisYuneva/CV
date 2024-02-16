@@ -6,15 +6,17 @@
 
     .lattice {
         @include text(32px, normal, 400, normal, var(--color-red));
+        text-shadow: var(--color-red) 0px 2px 3px;
     }
 
     .text {
         @include text(32px, normal, 400, normal, var(--color-black));
+        text-shadow: var(--color-red) 0px 2px 3px;
     }
 
     .line {
         border-bottom: 1px solid var(--color-red);
-        // width: 30px;
         margin-left: 16px;
+        box-shadow: var(--color-red) 0px 2px 3px;
     }
 }

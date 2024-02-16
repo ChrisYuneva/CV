@@ -17,6 +17,7 @@ function Cases() {
                     description={item.description}
                     stack={item.stack}
                     href={item.href}
+                    key={item.title}
                 />
             ))
         }

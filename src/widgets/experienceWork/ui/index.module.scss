@@ -1,0 +1,18 @@
+.wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    border-bottom: 1px solid var(--color-black);
+
+    .line {
+        width: 214px;
+    }
+
+    .cases {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+}
