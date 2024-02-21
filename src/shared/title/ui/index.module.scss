@@ -10,7 +10,7 @@
     }
 
     .text {
-        @include text(32px, normal, 400, normal, var(--color-black));
+        @include text(32px, normal, 400, normal, var(--color-white));
         text-shadow: var(--color-red) 0px 2px 3px;
     }
 

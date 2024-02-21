@@ -1,3 +1,6 @@
+@import '../../../app/styles/helpers.scss';
+
 .list {
     list-style-type: square;
+    @include text(16px, normal, 400, normal, var(--color-white));
 }

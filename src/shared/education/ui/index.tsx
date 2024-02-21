@@ -1,5 +1,4 @@
 import ExperienceCase from 'shared/experienceCase/ui';
-import Title from 'shared/title/ui';
 import styles from './index.module.scss';
 
 interface EducationProps {

@@ -2,12 +2,12 @@ import styles from './index.module.scss';
 
 interface ButtonNavProps {
     text: string,
-    onClick: () => void
+    scrollTo: () => void
 }
 
-function ButtonNav({ text, onClick }: ButtonNavProps) {
+function ButtonNav({ text, scrollTo }: ButtonNavProps) {
     return (
-        <button className={styles.btn} onClick={onClick}>{text}</button>
+        <button className={styles.btn} onClick={scrollTo}>{text}</button>
     )
 }
 

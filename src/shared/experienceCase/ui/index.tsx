@@ -17,15 +17,15 @@ function ExperienceCase({ name, time, stack, description, listItems }: Experienc
         name={name}
         time={time}
       />
-      <span>{description}</span>
+      <span className={styles.text}>{description}</span>
       {
-        stack && <span>Стек технологий: {stack.join(' / ')}.</span>
+        stack && <span className={styles.text}>Стек технологий: {stack.join(' / ')}.</span>
       }
       
       {
         listItems && 
         <>
-          <span>Обязанности:</span>
+          <span className={styles.text}>Обязанности:</span>
           <List items={listItems} />
         </>
       }

@@ -1,11 +1,12 @@
+import { forwardRef } from 'react';
 import ExperienceCase from 'shared/experienceCase/ui';
 import Title from 'shared/title/ui';
 import { workItems } from '../constants';
 import styles from './index.module.scss';
 
-function ExperienceWork() {
+const ExperienceWork = forwardRef<HTMLDivElement>(function ExperienceWork(_, ref) {
   return (
-    <section className={`${styles.wrapper} container`}>
+    <section className={`${styles.wrapper} container`} ref={ref}>
       <Title titleText='опыт работы' classNameLine={styles.line} />
       <div className={styles.cases}>
         {workItems.map((item) => (
@@ -19,8 +20,9 @@ function ExperienceWork() {
           />
         ))}
       </div>
+      <div className={styles.back}></div>
     </section>
   );
-}
+});
 
 export default ExperienceWork;

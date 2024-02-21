@@ -37,7 +37,9 @@ function Avatar() {
 
   function handleOnDrop(e: React.DragEvent<HTMLElement>) {
     const dragElemId = e.dataTransfer.getData('id');
-    changeActionValue(dragElemId);
+    if(dragElemId) {
+      changeActionValue(dragElemId);
+    }
     if (dragElemId === 'eraser') {
       setClassImg(styles.imgWrap);
       setActions({
@@ -67,14 +69,20 @@ function Avatar() {
       onDragOver={handleOnDragOver}
       onDrop={handleOnDrop}
       onDragLeave={handleOnDragLeave}
+      draggable={false}
     >
-      <div className={styles.counter}>
+      <div className={styles.test}>
+        <h1 className={styles.test2}>lorenm ispim resvf fgbgd</h1>
+      </div>
+      {
+        (actions.cake>0 || actions.potion>0) && <div className={styles.counter}>
         {
           Array.from(Array(actionsCounter).keys()).map((item) => (
             <div key={item} className={styles.count}></div>
           ))
         }
       </div>
+      }
       {actions.potion ? (
         <InfiniteContainer
           infiniteText={
@@ -90,7 +98,7 @@ function Avatar() {
         />
       ): null}
       <div className={classImg}>
-        <img src={img} alt='face' className={styles.img} />
+        <img src={img} alt='face' className={styles.img} draggable={false} />
       </div>
     </section>
   );

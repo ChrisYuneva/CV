@@ -1,7 +1,18 @@
+@import '../../../app/styles/helpers.scss';
+
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     padding-top: 60px;
     padding-bottom: 60px;
     .line {
         width: 310px;
+    }
+
+    .description {
+        display: block;
+        width: 70%;
+        @include text(18px, normal, 400, normal, var(--color-white));
     }
 }

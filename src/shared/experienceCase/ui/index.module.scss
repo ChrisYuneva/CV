@@ -5,4 +5,8 @@
     flex-direction: column;
     @include text(24px, normal, 400, normal);
     gap: 20px;
+
+    .text {
+        @include text(16px, normal, 400, normal, var(--color-white));
+    }
 }

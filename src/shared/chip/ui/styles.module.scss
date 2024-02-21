@@ -1,0 +1,22 @@
+@import '../../../app/styles/helpers.scss';
+
+.chip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-back);
+    gap: 10px;
+    padding: 16px;
+    width: 70%;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    
+    .name {
+        @include text(16px, normal, 400, normal, var(--color-white));
+    }
+
+    &:hover {
+        transform: translateY(-6px);
+        transition: all .3s ease-in-out;
+    }
+}

@@ -1,10 +1,11 @@
 import styles from './index.module.scss';
 
 interface LinkProps {
-    href: string
+    href?: string,
+    state: 'live' | 'code'
 }
 
-function Link({ href }: LinkProps) {
+function Link({ href, state }: LinkProps) {
     return (
         <a 
             href={href}
@@ -12,7 +13,9 @@ function Link({ href }: LinkProps) {
             rel='noopener noreferrer'
             className={styles.link}
         >
-            Live &lt;~&gt;   
+            {
+                state === 'live' ? 'Live |>' : 'Code <~>'
+            }
         </a>
     )
 }

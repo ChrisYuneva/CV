@@ -1,29 +1,27 @@
-
+import { forwardRef } from 'react';
 import CaseCard from 'shared/caseCard/ui';
 import Title from 'shared/title/ui';
 import { cases } from '../constants';
 import styles from './index.module.scss';
 
-function Cases() {
+const Cases = forwardRef<HTMLDivElement>(function Cases(_, ref) {
   return (
-    <div className={`${styles.cases} container`}>
+    <div className={`${styles.cases} container`} ref={ref}>
       <Title titleText='кейсы' classNameLine={styles.line} />
-      <div className={styles.cardsWrap}>
-        {
-            cases.map((item) => (
-                <CaseCard
-                    imgSrc={item.imgSrc}
-                    title={item.title}
-                    description={item.description}
-                    stack={item.stack}
-                    href={item.href}
-                    key={item.title}
-                />
-            ))
-        }
-      </div>
+      {cases.map((item, i) => (
+        <CaseCard
+          imgSrc={item.imgSrc}
+          title={item.title}
+          stack={item.stack}
+          description={item.description}
+          hrefDemo={item.hrefDemo}
+          reverse={i % 2 !== 0}
+          hrefCode={item.hrefCode}
+          key={item.title}
+        />
+      ))}
     </div>
   );
-}
+});
 
 export default Cases;

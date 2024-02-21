@@ -2,7 +2,11 @@ import ButtonNav from 'shared/buttonNav/ui';
 import { navItems } from '../constants/constants';
 import styles from './index.module.scss';
 
-function Navigation() {
+interface NavigationProps {
+    scrollTo: (num: number) => void
+}
+
+function Navigation({ scrollTo }: NavigationProps) {
     return (
         <nav className={styles.nav}>
             {
@@ -10,7 +14,7 @@ function Navigation() {
                     <ButtonNav 
                         text={item.text} 
                         key={item.text}
-                        onClick={() => console.log(item.path)}
+                        scrollTo={() => scrollTo(item.refNum)}
                     />)
             }
         </nav>

@@ -1,27 +1,27 @@
 interface NavItem {
     text: string,
-    path: string
+    refNum: number
 }
 
 export const navItems: NavItem[] = [
     {
         text: 'Навыки',
-        path: '/'
+        refNum: 0
     },
     {
         text: 'Кейсы',
-        path: '/'
+        refNum: 1
     },
     {
         text: 'Опыт работы',
-        path: '/'
+        refNum: 2
     },
     {
         text: 'Обо мне',
-        path: '/'
+        refNum: 3
     },
     {
         text: 'Контакты',
-        path: '/'
+        refNum: 4
     },
 ]
