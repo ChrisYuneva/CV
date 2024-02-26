@@ -2,5 +2,5 @@
 
 .list {
     list-style-type: square;
-    @include text(16px, normal, 400, normal, var(--color-white));
+    @include text(18px, normal, 400, normal, var(--color-white));
 }

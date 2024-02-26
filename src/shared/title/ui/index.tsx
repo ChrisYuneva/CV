@@ -2,7 +2,7 @@ import styles from './index.module.scss';
 
 interface TitleProps {
     titleText: string,
-    classNameLine: string
+    classNameLine?: string
 }
 
 function Title({ titleText, classNameLine }: TitleProps) {

@@ -12,7 +12,8 @@
     transition: all .3s ease-in-out;
     
     .name {
-        @include text(16px, normal, 400, normal, var(--color-white));
+        cursor: default;
+        @include text(18px, normal, 400, normal, var(--color-white));
     }
 
     &:hover {

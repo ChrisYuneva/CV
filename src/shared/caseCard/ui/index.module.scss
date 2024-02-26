@@ -12,7 +12,6 @@
         // height: 274px;
         // object-fit: cover;
         width: 100%;
-
         border-radius: 15px;
         box-shadow: 0 60px 123px -25px hsla(225, 2%, 62%, .42), 0 35px 75px -35px hsla(225, 2%, 62%, .08);
         box-shadow: 0 60px 123px -25px #5D3B41, 0 35px 75px -35px #4A4445;
@@ -60,11 +59,11 @@
         }
 
         .stack {
-            @include text(16px, medium, normal, normal, var(--color-white));
+            @include text(21px, medium, normal, normal, var(--color-white));
         }
 
         .description {
-            @include text(16px, medium, normal, normal, var(--color-white));
+            @include text(21px, medium, normal, normal, var(--color-white));
         }
 
         .links {
@@ -72,27 +71,6 @@
             gap: 30px;
         }
     }
-    
-
-    // .stack {
-    //     padding: 16px;
-    //     border-bottom: 1px solid var(--color-white);
-    // }
-
-    // .content {
-    //     display: flex;
-    //     flex-direction: column;
-    //     padding: 16px;
-    //     gap: 16px;
-
-    //     .title {
-    //         @include text(24px, medium, normal, normal, var(--color-white));
-    //     }
-
-    //     .description {
-    //         @include text(16px, medium, normal, normal, var(--color-white));
-    //     }
-    // }
 }
 
 .reverseCard {

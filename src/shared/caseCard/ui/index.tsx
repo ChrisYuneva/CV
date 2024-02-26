@@ -21,7 +21,9 @@ function CaseCard({ imgSrc, title, stack, description, hrefDemo, reverse, hrefCo
                 <span className={styles.description}>{description}</span>
                 <div className={styles.links}>
                     <Link href={hrefDemo} state='live'/>
-                    <Link href={hrefCode} state='code'/>
+                    {
+                        hrefCode && <Link href={hrefCode} state='code'/> 
+                    }
                 </div>
             </div>
             {/* <div className={styles.stack}>

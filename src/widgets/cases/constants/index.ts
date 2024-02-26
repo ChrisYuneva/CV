@@ -25,7 +25,7 @@ export const cases: Case[] = [
         title: 'KUT',
         description: 'Веб-приложение автоподбора с возможностью рассчитать стоимость автомобиля',
         hrefDemo: 'https://kut-auto.ru/',
-        stack: ['React', 'TypeScript', 'SCSS', 'GSAP', 'MUI']
+        stack: ['React', 'TypeScript', 'SCSS', 'GSAP']
     },
     {
         imgSrc: facite,

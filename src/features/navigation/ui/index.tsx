@@ -1,17 +1,22 @@
-import ButtonNav from 'shared/buttonNav/ui';
-import { navItems } from '../constants/constants';
+import LinkNav from 'shared/linkNav/ui';
 import styles from './index.module.scss';
 
+interface NavItem {
+    text: string,
+    refNum: number
+}
+
 interface NavigationProps {
+    items: NavItem[],
     scrollTo: (num: number) => void
 }
 
-function Navigation({ scrollTo }: NavigationProps) {
+function Navigation({ items, scrollTo }: NavigationProps) {
     return (
         <nav className={styles.nav}>
             {
-                navItems.map((item) => 
-                    <ButtonNav 
+                items.map((item) => 
+                    <LinkNav 
                         text={item.text} 
                         key={item.text}
                         scrollTo={() => scrollTo(item.refNum)}

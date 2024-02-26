@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import img from 'assets/images/face3.png';
+import cloud from 'assets/icons/cloud.svg';
 import InfiniteContainer from 'features/infiniteContainer/ui';
 import InfinitеText from 'features/infiniteText/ui';
 import { infiniteTextsBig, infiniteTextsSmall } from '../constants';
@@ -71,9 +72,11 @@ function Avatar() {
       onDragLeave={handleOnDragLeave}
       draggable={false}
     >
+      {/* <img src={cloud} alt='Cloud icon' className={styles.cloud}/>
       <div className={styles.test}>
-        <h1 className={styles.test2}>lorenm ispim resvf fgbgd</h1>
-      </div>
+        <p className={styles.firstLine}>Привет! Меня зовут Кристина.</p>
+        <p className={styles.secondLine}>Это мое небольшое портфолио</p>
+      </div> */}
       {
         (actions.cake>0 || actions.potion>0) && <div className={styles.counter}>
         {
