@@ -23,6 +23,7 @@
         transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
         transition: all .6s ease;
         width: 700px;
+        cursor: pointer;
 
         &:hover {
             box-shadow: 0 19px 67px -38px hsla(225, 2%, 62%, 0.8);
@@ -50,13 +51,6 @@
         flex-direction: column;
         width: 40%;
         gap: 40px;
-        .title {
-            @include text(24px, medium, normal, normal, var(--color-white));
-            border: 1px solid var(--color-red);
-            width: fit-content;
-            padding: 16px 24px;
-            box-shadow: 6px 6px 0 0 var(--color-red);
-        }
 
         .stack {
             @include text(21px, medium, normal, normal, var(--color-white));

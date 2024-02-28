@@ -1,12 +1,14 @@
 import { Dispatch, SetStateAction, useEffect } from 'react';
+import ModalContent from 'features/modalContent/ui';
 import styles from './index.module.scss';
 
 interface ModalProps {
     setOpen: Dispatch<SetStateAction<boolean>>;
+    caseName: string
     // children: ReactNode;
 }
 
-function Modal({ setOpen }: ModalProps) {
+function Modal({ setOpen, caseName }: ModalProps) {
     useEffect(() => {
         document.body.style.overflow = 'hidden';
 
@@ -23,7 +25,9 @@ function Modal({ setOpen }: ModalProps) {
         <div className={styles.modalWrapper}>
             <div className={styles.background} onClick={handleSetOpen}/>
             <div className={styles.centered}>
-                {/* <div className={styles.modal}>{children}</div> */}
+                <div className={styles.modal}>
+                    <ModalContent caseName={caseName} />
+                </div>
             </div>
         </div>
     );

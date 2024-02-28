@@ -1,0 +1,40 @@
+@import '../../../app/styles/helpers.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .titleWrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .title {
+            @include text(20px, normal, 400, normal, var(--color-white));
+        }
+    }
+
+    .contentWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 50%; 
+            gap: 40px;
+            height: 100%;
+
+            .text {
+                @include text(20px, normal, 400, normal, var(--color-white));
+            }
+        }
+    }
+
+    .btnWrap {
+        display: flex;
+        gap: 40px;
+    }
+}
